@@ -113,7 +113,7 @@ This code builds on several labs' work, credited in each file's header:
 If you use this code, please cite:
 
 - Chen et al., 2021. *Cell Reports*. [doi:10.1016/j.celrep.2021.109304](https://doi.org/10.1016/j.celrep.2021.109304)
-- Siefert et al., 2026. [doi:10.64898/2026.06.26.734578](https://doi.org/10.64898/2026.06.26.734578)
+- Siefert et al., 2026. *bioRxiv*. [doi:10.64898/2026.06.26.734578](https://doi.org/10.64898/2026.06.26.734578)
 
 ## License
 
