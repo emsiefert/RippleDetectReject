@@ -29,7 +29,7 @@ wavelet_win = -max_win_size:1/srate:max_win_size;
 
 %initialize variables
 tmp_amplitude = zeros(length(freqs),length(data));
-tmp_phase = zeros(length(freqs),length(data));
+%tmp_phase = zeros(length(freqs),length(data)); % phase not used by the ripple pipeline - uncomment (3 lines) to save it
 
 %% Decompose
 % Decomposition iterates through each center frequency (wavelet), with 
@@ -59,13 +59,13 @@ for fi=1:length(freqs)
     %extract amplitude and phase data
     %BF: apply amplitude normalization in function?    
     tmp_amplitude(fi,:) = abs(tmp_freq_analytic); 
-    tmp_phase(fi,:) = angle(tmp_freq_analytic); %phase  
+    %tmp_phase(fi,:) = angle(tmp_freq_analytic); %phase
     
     
 end %end frequency loop
 
 %% collect data
 decomp_signal.amplitude = single(tmp_amplitude);
-decomp_signal.phase = tmp_phase;
+%decomp_signal.phase = tmp_phase;
 
 %finish

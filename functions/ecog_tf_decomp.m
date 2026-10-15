@@ -53,7 +53,7 @@ for ee = 1:length(elecs)
     [tf_data] = ecog_decomp_wavelet(decomp_input, center_freqs, srate_comp, 7);
 
     %add t/f decomp. to band data structure
-    %data contains amplitude and phase matrix
+    %data contains amplitude matrix (phase is optional, see ecog_decomp_wavelet)
     band.tf_data = tf_data;
 
     %% save band structure

@@ -98,7 +98,7 @@ We recommend applying similar steps to the output of this pipeline, or stricter 
 |---|---|
 | `Filt_dir` | `fiEEG<block>_<chan>.mat`: notch filtered channels |
 | `WM_dir` | `WMBPiEEG<block>_<chan>.mat`: white matter referenced channels |
-| `Spec_dir` | `TF_decomp_WM_<sbj>_<block>_<chan>.mat`: wavelet amplitude and phase (`band`) |
+| `Spec_dir` | `TF_decomp_WM_<sbj>_<block>_<chan>.mat`: wavelet amplitude (`band`); phase saving is commented out in `ecog_decomp_wavelet.m` |
 | `SWR_dir` | `outRipple_<sbj>_<block>_WM_<chan>_80-120.mat`: detection output (`detect_output`) |
 | | `ripple_LFP_TF_DS_<block>_WM_<chan>_80-120.mat`: event epochs (`eventEpoch`: `LFP`, `BPFil`, `TF`, `SD`) |
 | | `ripple_rej_info_<block>_WM_<chan>_80-120.mat`: rejection results (`event_pk_rej_info`, column 2 = reject code) |
