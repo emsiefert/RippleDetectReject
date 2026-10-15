@@ -1,5 +1,5 @@
 % individual_ripple_visualization
-% 11/8/2024
+% Written by Liz Siefert, 11/8/2024
 % updated 1/23/2025 to accumulate all ripples in a single array to be able
 % to plot the average across everything for an individual
 % if you want to plot individual ones too, toggle "if_plot" to 1. Otherwise
@@ -10,7 +10,6 @@
 %   MATLAB R2019b or newer (tiledlayout)
 %   MATLAB Statistics and Machine Learning Toolbox (nanmean)
 %   functions/: spect_cmap.mat
-% liz siefert
 close all
 clear all
 
