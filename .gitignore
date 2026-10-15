@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# MATLAB autosave / backups
+*.asv
+*.m~
+
+# data and results (keep the colormap the plots need)
+*.mat
+!functions/spect_cmap.mat
+*.png
+*.fig
+*.csv
