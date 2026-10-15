@@ -106,7 +106,7 @@ This code builds on several labs' work, credited in each file's header:
 - Master file, time-frequency wrapper and wavelet decomposition: Brett Foster, with updates from Yvonne Chen and Eleonora Bartoli
 - `notch.m`: Robert Knight lab (Adeen Flinker)
 - `noiseFiltData.m`: based on code by Mohammad Dastjerdi (Parvizi lab, Stanford), modified by Brett Foster and Yvonne Chen
-- Finalization of rejection parameters and cleanup for sharing: Liz Siefert
+- Finalization of rejection parameters, ripple plotting, and cleanup for sharing: Liz Siefert
 
 ## Citation
 
