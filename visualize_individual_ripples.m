@@ -1,4 +1,6 @@
 % individual_ripple_visualization
+% OPTIONAL - not needed for ripple detection or rejection. Plots kept vs.
+% rejected ripples to check the detection results.
 % Written by Liz Siefert, 11/8/2024
 % updated 1/23/2025 to accumulate all ripples in a single array to be able
 % to plot the average across everything for an individual
