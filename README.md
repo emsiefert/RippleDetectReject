@@ -84,6 +84,14 @@ Peaks are found in each event's spectrum. An event is kept (code 0) only if it p
 | 4 | more than one peak above the ripple band, and one of them is above 50% of the ripple peak height (likely epileptic spikes) |
 | 5 | a peak outside the ripple band (above 30 Hz) is as high as the ripple peak |
 
+### Further rejection steps (not included here)
+In our analyses (Siefert et al., 2026), two more rejection steps were applied after this pipeline, in separate downstream code:
+
+1. **Amplitude artifact rejection:** remaining ripples with amplitude above 300 µV were rejected as artifacts.
+2. **Electrode-wise thresholding:** each electrode's rejection rate was calculated within each recording block. Electrodes rejecting more than 60% of events were excluded from that block, and electrodes excluded from 75% or more of blocks were removed from all analyses, as these likely reflect noise or epileptic activity.
+
+We recommend applying similar steps to the output of this pipeline, or stricter thresholds if your data call for it. `ripple_inspect_plot` returns the kept and rejected counts for each channel (`channel_event_attr`), which is all the electrode-wise step needs.
+
 ## Outputs
 
 | Folder (`master_vars` field) | Files |
